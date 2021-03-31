@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Spatie\LaravelPackageTools\Tests\PackageServiceProviderTests;
+namespace Vanthao03596\LaravelPackageTools\Tests\PackageServiceProviderTests;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\Tests\TestCase;
-use Spatie\LaravelPackageTools\Tests\TestPackage\Src\ServiceProvider;
+use Vanthao03596\LaravelPackageTools\Package;
+use Vanthao03596\LaravelPackageTools\Tests\TestCase;
+use Vanthao03596\LaravelPackageTools\Tests\TestPackage\Src\ServiceProvider;
 
 abstract class PackageServiceProviderTestCase extends TestCase
 {

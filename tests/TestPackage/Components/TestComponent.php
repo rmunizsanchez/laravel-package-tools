@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelPackageTools\Tests\TestPackage\Components;
+namespace Vanthao03596\LaravelPackageTools\Tests\TestPackage\Components;
 
 use Illuminate\View\Component;
 

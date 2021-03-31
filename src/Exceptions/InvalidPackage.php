@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelPackageTools\Exceptions;
+namespace Vanthao03596\LaravelPackageTools\Exceptions;
 
 use Exception;
 
