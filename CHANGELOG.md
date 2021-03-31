@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-package-tools` will be documented in this file.
 
+## 2.0.1 - 2021-05-07
+
+- Rebase make package up to date
+
+## 2.0.0 - 2021-03-31
+
+- Initial fork version
+
 ## 1.7.0 - 2021-05-06
 
 - add support to migrations in folders (#30)
