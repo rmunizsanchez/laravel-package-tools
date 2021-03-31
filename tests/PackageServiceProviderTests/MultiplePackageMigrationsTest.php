@@ -2,8 +2,8 @@
 
 namespace Vanthao03596\LaravelPackageTools\Tests\PackageServiceProviderTests;
 
-use Vanthao03596\LaravelPackageTools\Package;
 use Spatie\TestTime\TestTime;
+use Vanthao03596\LaravelPackageTools\Package;
 
 class MultiplePackageMigrationsTest extends PackageServiceProviderTestCase
 {

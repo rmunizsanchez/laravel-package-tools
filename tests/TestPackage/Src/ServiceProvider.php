@@ -3,7 +3,6 @@
 
 namespace Vanthao03596\LaravelPackageTools\Tests\TestPackage\Src;
 
-use Closure;
 use Vanthao03596\LaravelPackageTools\Package;
 use Vanthao03596\LaravelPackageTools\PackageServiceProvider;
 
