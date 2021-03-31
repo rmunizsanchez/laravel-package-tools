@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
+use Illuminate\View\Compilers\BladeCompiler;
 use ReflectionClass;
 use Vanthao03596\LaravelPackageTools\Exceptions\InvalidPackage;
 
@@ -104,8 +105,18 @@ abstract class PackageServiceProvider extends ServiceProvider
             $this->loadViewsFrom($this->package->basePath('/../resources/views'), $this->package->shortName());
         }
 
+        // Fix for laravel 6
         foreach ($this->package->viewComponents as $componentClass => $prefix) {
-            $this->loadViewComponentsAs($prefix, [$componentClass]);
+            if (version_compare($this->app::VERSION, '7.0.0', '>=')) {
+                $this->loadViewComponentsAs($prefix, [$componentClass]);
+            } else {
+                $components = [$componentClass];
+                $this->callAfterResolving(BladeCompiler::class, function ($blade) use ($prefix, $components) {
+                    foreach ($components as $alias => $component) {
+                        $blade->component($component, is_string($alias) ? $alias : null, $prefix);
+                    }
+                });
+            }
         }
 
         if (count($this->package->viewComponents)) {
