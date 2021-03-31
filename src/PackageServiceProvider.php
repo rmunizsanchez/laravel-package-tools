@@ -6,7 +6,6 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
-use Illuminate\View\Compilers\BladeCompiler;
 use ReflectionClass;
 use Vanthao03596\LaravelPackageTools\Exceptions\InvalidPackage;
 
