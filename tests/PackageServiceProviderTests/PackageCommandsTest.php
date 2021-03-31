@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelPackageTools\Tests\PackageServiceProviderTests;
+namespace Vanthao03596\LaravelPackageTools\Tests\PackageServiceProviderTests;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\Tests\TestClasses\FourthTestCommand;
-use Spatie\LaravelPackageTools\Tests\TestClasses\OtherTestCommand;
-use Spatie\LaravelPackageTools\Tests\TestClasses\TestCommand;
-use Spatie\LaravelPackageTools\Tests\TestClasses\ThirdTestCommand;
+use Vanthao03596\LaravelPackageTools\Package;
+use Vanthao03596\LaravelPackageTools\Tests\TestClasses\FourthTestCommand;
+use Vanthao03596\LaravelPackageTools\Tests\TestClasses\OtherTestCommand;
+use Vanthao03596\LaravelPackageTools\Tests\TestClasses\TestCommand;
+use Vanthao03596\LaravelPackageTools\Tests\TestClasses\ThirdTestCommand;
 
 class PackageCommandsTest extends PackageServiceProviderTestCase
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\LaravelPackageTools;
+namespace Vanthao03596\LaravelPackageTools;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use ReflectionClass;
-use Spatie\LaravelPackageTools\Exceptions\InvalidPackage;
+use Vanthao03596\LaravelPackageTools\Exceptions\InvalidPackage;
 
 abstract class PackageServiceProvider extends ServiceProvider
 {
-    protected Package $package;
+    protected $package;
 
     abstract public function configurePackage(Package $package): void;
 
