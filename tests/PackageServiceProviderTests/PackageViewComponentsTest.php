@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelPackageTools\Tests\PackageServiceProviderTests;
+namespace Vanthao03596\LaravelPackageTools\Tests\PackageServiceProviderTests;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\Tests\TestPackage\Components\TestComponent;
+use Vanthao03596\LaravelPackageTools\Package;
+use Vanthao03596\LaravelPackageTools\Tests\TestPackage\Components\TestComponent;
 
 class PackageViewComponentsTest extends PackageServiceProviderTestCase
 {

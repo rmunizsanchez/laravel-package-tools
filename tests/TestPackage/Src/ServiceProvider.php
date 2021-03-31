@@ -1,15 +1,15 @@
 <?php
 
 
-namespace Spatie\LaravelPackageTools\Tests\TestPackage\Src;
+namespace Vanthao03596\LaravelPackageTools\Tests\TestPackage\Src;
 
 use Closure;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Vanthao03596\LaravelPackageTools\Package;
+use Vanthao03596\LaravelPackageTools\PackageServiceProvider;
 
 class ServiceProvider extends PackageServiceProvider
 {
-    public static ?Closure $configurePackageUsing = null;
+    public static $configurePackageUsing = null;
 
     public function configurePackage(Package $package): void
     {

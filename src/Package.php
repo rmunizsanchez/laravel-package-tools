@@ -1,34 +1,34 @@
 <?php
 
-namespace Spatie\LaravelPackageTools;
+namespace Vanthao03596\LaravelPackageTools;
 
 use Illuminate\Support\Str;
 
 class Package
 {
-    public string $name;
+    public $name;
 
-    public ?string $configFileName = null;
+    public $configFileName = null;
 
-    public bool $hasViews = false;
+    public $hasViews = false;
 
-    public bool $hasTranslations = false;
+    public $hasTranslations = false;
 
-    public bool $hasAssets = false;
+    public $hasAssets = false;
 
-    public array $migrationFileNames = [];
+    public $migrationFileNames = [];
 
-    public array $routeFileNames = [];
+    public $routeFileNames = [];
 
-    public array $commands = [];
+    public $commands = [];
 
-    public array $viewComponents = [];
+    public $viewComponents = [];
 
-    public array $sharedViewData = [];
+    public $sharedViewData = [];
 
-    public array $viewComposers = [];
+    public $viewComposers = [];
 
-    public string $basePath;
+    public $basePath;
 
     public function name(string $name): self
     {
