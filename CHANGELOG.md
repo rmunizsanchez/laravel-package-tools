@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-package-tools` will be documented in this file.
 
+## 2.0.0 - 2021-03-31
+
+- Initial fork version
+
 ## 1.6.2 - 2021-03-25
 
 - use Carbon::now() for Lumen compatibility. (#26)
