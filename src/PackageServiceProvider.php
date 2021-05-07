@@ -128,8 +128,8 @@ abstract class PackageServiceProvider extends ServiceProvider
         $len = strlen($migrationFileName) + 4;
 
         if (Str::contains($migrationFileName, '/')) {
-            $migrationsPath .= Str::of($migrationFileName)->beforeLast('/')->finish('/');
-            $migrationFileName = Str::of($migrationFileName)->afterLast('/');
+            $migrationsPath .= Str::finish(Str::beforeLast($migrationFileName, '/'), '/');
+            $migrationFileName = Str::afterLast($migrationFileName, '/');
         }
 
         foreach (glob(database_path("${migrationsPath}*.php")) as $filename) {
