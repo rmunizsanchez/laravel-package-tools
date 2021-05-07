@@ -12,7 +12,6 @@ Here's an example of how it can be used.
 ```php
 use Vanthao03596\LaravelPackageTools\PackageServiceProvider;
 use Vanthao03596\LaravelPackageTools\Package;
-use MyPackage\ViewComponents\Alert;
 
 class YourPackageServiceProvider extends PackageServiceProvider
 {
@@ -22,7 +21,6 @@ class YourPackageServiceProvider extends PackageServiceProvider
             ->name('your-package-name')
             ->hasConfigFile()
             ->hasViews()
-            ->hasViewComponent('spatie', Alert::class)
             ->hasViewComposer('*', MyViewComposer::class)
             ->sharesDataWithAllViews('downloads', 3)
             ->hasTranslations()
