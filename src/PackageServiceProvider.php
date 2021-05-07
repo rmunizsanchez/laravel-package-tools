@@ -63,8 +63,8 @@ abstract class PackageServiceProvider extends ServiceProvider
                             $migrationPath = 'migrations/';
 
                             if (Str::contains($migrationFileName, '/')) {
-                                $migrationPath .= Str::of($migrationFileName)->beforeLast('/')->finish('/');
-                                $migrationFileName = Str::of($migrationFileName)->afterLast('/');
+                                $migrationPath .= Str::finish(Str::beforeLast($migrationFileName, '/'), '/');
+                                $migrationFileName = Str::afterLast($migrationFileName, '/');
                             }
 
                             return database_path($migrationPath . $now->addSecond()->format('Y_m_d_His') . '_' . Str::of($migrationFileName)->snake()->finish('.php'));
