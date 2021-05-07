@@ -67,7 +67,7 @@ abstract class PackageServiceProvider extends ServiceProvider
                                 $migrationFileName = Str::afterLast($migrationFileName, '/');
                             }
 
-                            return database_path($migrationPath . $now->addSecond()->format('Y_m_d_His') . '_' . Str::of($migrationFileName)->snake()->finish('.php'));
+                            return database_path($migrationPath . $now->addSecond()->format('Y_m_d_His') . '_' . Str::finish(Str::snake($migrationFileName), '.php'));
                         }),
                     ], "{$this->package->shortName()}-migrations");
                 }
