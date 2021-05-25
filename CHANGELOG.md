@@ -2,11 +2,15 @@
 
 All notable changes to `laravel-package-tools` will be documented in this file.
 
-## 2.0.1 - 2021-05-07
+## fork-2.0.2 - 2021-05-25
+
+- add support for multiple config files
+
+## fork-2.0.1 - 2021-05-07
 
 - Rebase make package up to date
 
-## 2.0.0 - 2021-03-31
+## fork-2.0.0 - 2021-03-31
 
 - Initial fork version
 
