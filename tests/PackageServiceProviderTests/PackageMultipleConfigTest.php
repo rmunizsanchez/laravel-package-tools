@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelPackageTools\Tests\PackageServiceProviderTests;
+namespace Vanthao03596\LaravelPackageTools\Tests\PackageServiceProviderTests;
 
-use Spatie\LaravelPackageTools\Package;
+use Vanthao03596\LaravelPackageTools\Package;
 
 class PackageMultipleConfigTest extends PackageServiceProviderTestCase
 {
